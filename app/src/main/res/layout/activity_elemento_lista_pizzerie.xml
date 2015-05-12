@@ -1,0 +1,32 @@
+<FrameLayout
+    android:layout_height="wrap_content" android:layout_width="match_parent"
+    android:padding="3dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:layout_height="wrap_content" android:layout_width="0dp" android:layout_weight="0.7"
+                android:padding="2dp"  android:textAppearance="?android:attr/textAppearanceLarge"
+                 android:layout_gravity="left|top"
+                android:id="@+id/nome_pizzeria"
+                xmlns:android="http://schemas.android.com/apk/res/android" />
+            <RatingBar
+                android:layout_width="wrap_content" android:layout_height="24dp" style = "?android:attr/ratingBarStyleSmall"
+                android:numStars="5" android:stepSize="0.5"  android:rating="0" android:layout_marginTop="2dp"
+                android:id="@+id/rating_pizzeria_lista" android:layout_gravity="top|right" />
+        </LinearLayout>
+        <TextView
+            android:layout_height="wrap_content" android:layout_width="match_parent"
+            android:padding="2dp"  android:textAppearance="?android:attr/textAppearanceSmall" android:layout_gravity="left"
+            android:id="@+id/indirizzo_pizzeria"
+            xmlns:android="http://schemas.android.com/apk/res/android" />
+    </LinearLayout>
+</FrameLayout>

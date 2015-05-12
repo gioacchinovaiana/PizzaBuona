@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="it.gioacchinovaiana.pizzabuona.MainActivity" >
+
+    <item  android:id="@+id/filtri"
+        android:title="Ricerca"
+        android:icon="@android:drawable/checkbox_on_background"
+        app:showAsAction="ifRoom|withText"/>
+    <item  android:id="@+id/update"
+        android:title="Aggiornamento"/>
+    <item  android:id="@+id/info"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:title="Info"/>
+</menu>

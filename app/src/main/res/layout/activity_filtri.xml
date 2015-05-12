@@ -1,0 +1,217 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/scrollViewFiltri" >
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"
+            android:background="#60c0a231">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Provincia"
+                    android:id="@+id/textView2"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:textSize="26sp" />
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#c0c0c0"/>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Seleziona tutte"
+                    android:id="@+id/checkBoxAllProv"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Catania"
+                    android:id="@+id/checkBoxCatania"
+                    android:layout_marginLeft="5dp" />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Messina"
+                    android:id="@+id/checkBoxMessina"
+                    android:layout_marginLeft="5dp" />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Palermo"
+                    android:id="@+id/checkBoxPalermo"
+                    android:layout_marginLeft="5dp" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#60c0a231"
+            android:layout_margin="15dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Pizza"
+                    android:id="@+id/textFiltri"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:textSize="26sp" />
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#c0c0c0"/>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Seleziona tutti"
+                    android:id="@+id/checkBoxAllFilter"
+                    android:textSize="20sp" />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Farine molite a pietra"
+                    android:id="@+id/checkBoxFarinePietra"
+                    android:layout_marginLeft="5dp" />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lievito madre"
+                    android:id="@+id/checkBoxLievitoMadre"
+                    android:layout_marginLeft="5dp" />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mozzarella boccone"
+                    android:id="@+id/checkBoxBoccone"
+                    android:layout_marginLeft="5dp" />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mozzarella filone"
+                    android:id="@+id/checkBoxFilone"
+                    android:layout_marginLeft="5dp" />
+
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"
+            android:background="#60c0a231">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Forno"
+                    android:id="@+id/textViewForno"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:textSize="26sp" />
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#c0c0c0"/>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Seleziona tutti"
+                    android:id="@+id/checkBoxAllForno"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Elettrico"
+                    android:id="@+id/checkBoxFornoElettrico"
+                    android:layout_marginLeft="5dp" />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gas"
+                    android:id="@+id/checkBoxFornoGas"
+                    android:layout_marginLeft="5dp" />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Legna"
+                    android:id="@+id/checkBoxFornoLegna"
+                    android:layout_marginLeft="5dp" />
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"
+            android:background="#60c0a231">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Pizzeria"
+                    android:id="@+id/textViewPizzeria"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:textSize="26sp" />
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#c0c0c0"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Birre Artigianali"
+                    android:id="@+id/checkBoxBirre"
+                    android:layout_marginLeft="5dp" />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pizza per celiaci"
+                    android:id="@+id/checkBoxCeliaci"
+                    android:layout_marginLeft="5dp"
+                    android:checked="false" />
+
+
+            </LinearLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+</ScrollView>
