@@ -258,28 +258,8 @@ public class PizzeriaFragment extends Fragment implements LoaderManager.LoaderCa
             if(conto.length()>0){textView_conto.setText("Conto: € "+conto);}else{textView_conto.setText("");}
             if(recensione.length()>0){textView_recensione.setText("Recensione del "+recensione);}else{textView_recensione.setText("");}
             if(rivalutazione.length()>0){textView_rivalutazione.setText("Rivalutazione del " + rivalutazione);}else{textView_rivalutazione.setText("");}
-            if(T1.length()>0) {
-                button_chiama_tel1.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View arg0) {
-                        if (((TelephonyManager) getActivity().getSystemService(Context.TELEPHONY_SERVICE)).getPhoneType() != TelephonyManager.PHONE_TYPE_NONE) {
-                            Intent callIntent = new Intent(Intent.ACTION_CALL);
-                            callIntent.setData(Uri.parse("tel:" + T1));
-                            startActivity(callIntent);
-                        }
-                    }
-                });
-            }
-            if(T2.length()>0) {
-                button_chiama_tel2.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View arg0) {
-                        Intent callIntent = new Intent(Intent.ACTION_CALL);
-                        callIntent.setData(Uri.parse("tel:" + T2));
-                        startActivity(callIntent);
-                    }
-                });
-            }
+
+ 
             if(link.length()>0){
                 image_recensione.setOnClickListener(new View.OnClickListener(){
                     @Override
